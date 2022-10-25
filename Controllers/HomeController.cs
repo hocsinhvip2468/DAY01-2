@@ -29,5 +29,7 @@ namespace TruyenDuLieu.Controllers
             //MEOMEOMEO
             return View(new ErrorViewModel { RequestId = Activity.Current?.Id ?? HttpContext.TraceIdentifier });
         }
+        // hehehehehehehehe
+        /// meo meo meo
     }
 }// meo meo meo
