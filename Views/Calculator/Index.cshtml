@@ -1,0 +1,28 @@
+﻿
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h1>Máy tính cá nhân</h1>
+<form>
+    <input name="SoHang01" step="0.01" type="number" value="@ViewBag.SoHang01"/>
+    <select name="PhepToan">
+        <option value="+">+</option>
+        <option value="-">-</option>
+        <option value="*">*</option>
+        <option value="/">/</option>
+        <option value="^">^</option>
+        <option value="%">%</option>
+    </select>
+    <input name="SoHang02"  step="0.01" value="@ViewBag.SoHang02" type="number"/>
+    <button>=</button>
+    <span class="text-danger">@ViewBag.KetQua</span>
+</form>
+
+@section Scripts{
+    <script>
+        $(document).ready(function(){
+            $("select[name='PhepToan']").val('@ViewBag.PhepToan');
+        });
+    </script>
+}
